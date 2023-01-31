@@ -41,7 +41,7 @@
 
 .wally{
   width: 100%;
-  animation: blink_w 0.1s 100;
+  animation: blink_w 0.1s 30;
   cursor: zoom-in;
 }
 
