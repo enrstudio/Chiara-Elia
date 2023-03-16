@@ -1,29 +1,22 @@
 @font-face {
-    font-family: freak;
-    src: url(src/font/FREAKGROTESK-NEXT-BOLD.OTF);
+    font-family: apple;
+    src: url(src/font/HomemadeApple-Regular.ttf);
 }
 @font-face {
-    font-family: ocr;
-    src: url(src/font/OCRASTD.OTF);
+    font-family: sono;
+    src: url(src/font/Sono-VariableFont_MONO\,wght.ttf);
 }
 
 html, body{
-    font-family: freak;
-    background-color: black;
-    color: yellowgreen;
-    /* width: calc(100% - 10px); */
-    /* margin: auto; */
+    font-family: Apple;
+    color: tan;
     margin: 0;
-}
-
-.ui-loader{
-    display: none;
 }
 
 .main{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     /* overflow: auto; */
     max-width: 50vw;
     height: auto;
@@ -32,12 +25,17 @@ html, body{
 }
 
 .cover{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "cover";
-    position: relative;
-    /* height: 50vh; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
     width: 100%;
 }
 
@@ -45,11 +43,15 @@ html, body{
     padding: 2.5vh;
     grid-area: cover;
     /* font-family: ippocampo; */
-    font-size: 140px;
+    font-size: 90px;
     margin: 0 0;
     position: relative;
     text-align: center;
     /* top: -150px; */
+}
+
+h1, h2, h3, h4, h5{
+    font-weight: 400;
 }
 
 h3,ul{
@@ -61,79 +63,72 @@ ul{
     margin-bottom: 30px;
 }
 
+a{
+    text-decoration: none;
+    color: Indigo;
+}
+
+a:hover{
+    text-decoration: none;
+    color: lightblue;
+}
+
 .descrizione{
     margin: 30px 20px;
     align-self: flex-start;
 }
 
-.tip{
+.sono{
+    font-family: sono;
+}
+
+.self_c{
     align-self: center;
+}
+
+.form{
+    margin: 5vh 0;
+    margin-bottom: 15vh;
+    color: white;
+    background-color: lightblue;
+    font-size: 30px;
+    padding: 2vh;
     text-align: center;
 }
 
-.celebrate{
-    /* font-family: kooky; */
-    font-weight: 400;
+.form:hover{
+    color: lightblue;
+    border: 1px solid lightblue;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.data{
     font-size: 40px;
-    margin: 0;
-    padding: 0;
-    font-style: italic;
 }
 
-.tnr{
-    /* font-family: 'Montserrat', sans-serif; */
-    font-weight: bold;
-    font-style: italic;
+.present, .activities{
+    padding-top: 2.5vh;
+    height: 50vh;
+    width: 50vw;
+    border-top: 1px dotted tan;
+    font-family: sono;
 }
 
-.ippocampo{
-    /* font-family: ippocampo; */
-    font-size: 100px;
-}
+@media screen and (max-width: 900px) {
 
-.margin_top_s{
-    padding-top: 10vh;
-}
 
-.blanket{
-    grid-area: cover;
-    width: 100%;
-}
 
-.a_center{
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-}
-
-.arrow{
-    width: 100%;
-    text-align: center;
-}
-
-.blink_me {
-    animation: blinker 0.1s linear infinite;
-  }
-
-.strokeme{
-    color: yellowgreen;
-    background-color: yellowgreen;
-    text-shadow: -1x -1px 0 #000, 1x -1px 0 #000, -1x 1px 0 #000, 1x 1px 0 #000,;
-}
-
-  pre{
-    /* font-family: monospace; */
-    white-space: pre;
-  }
-  
-  @keyframes blinker {
-    50% {
-      opacity: 0.5;
+    .main{
+        max-width: 85vw;
     }
-  }
 
+    .title{
+      font-size: 15vw;
+    }
 
+    .form{
+        width: 60vw;
+        font-size: 25px;
+    }
 
-
-
+}
