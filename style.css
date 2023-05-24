@@ -1,14 +1,18 @@
 @font-face {
-    font-family: apple;
-    src: url(src/font/HomemadeApple-Regular.ttf);
+    font-family: abril;
+    src: url(./src/font/Abril_Fatface/AbrilFatface-Regular.ttf);
 }
 @font-face {
     font-family: sono;
     src: url(src/font/Sono-VariableFont_MONO\,wght.ttf);
 }
+@font-face {
+    font-family: monserrat;
+    src: url(./src/font/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
 
 html, body{
-    font-family: Apple;
+    font-family: abril;
     color: tan;
     margin: 0;
 }
@@ -27,7 +31,7 @@ html, body{
 .cover{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     justify-content: center;
 }
@@ -37,6 +41,8 @@ section{
     flex-direction: column;
     /* height: 100vh; */
     width: 100%;
+    border-bottom: 1px dotted tan;
+    font-family: monserrat;
 }
 
 .title{
@@ -79,7 +85,11 @@ a:hover{
 }
 
 .sono{
-    font-family: sono;
+    font-family: monserrat;
+}
+
+.indicazioni{
+    margin: 0 2.5vh;
 }
 
 .self_c{
@@ -88,7 +98,7 @@ a:hover{
 
 .form{
     margin: 5vh 0;
-    margin-bottom: 15vh;
+    margin-bottom: 7.5vh;
     color: white;
     background-color: lightblue;
     font-size: 30px;
@@ -106,12 +116,13 @@ a:hover{
     font-size: 40px;
 }
 
-.present, .activities{
+.pernotto, .present, .activities{
     padding-top: 2.5vh;
-    height: 50vh;
-    width: 50vw;
-    border-top: 1px dotted tan;
-    font-family: sono;
+    /* height: 50vh; */
+    padding-bottom: 5vh;
+    /* width: 50vw; */
+    /* border-top: 1px dotted tan; */
+
 }
 
 @media screen and (max-width: 900px) {
